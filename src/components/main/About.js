@@ -33,7 +33,6 @@ class About extends React.Component {
                         onChange={changeValue}
                         value={this.props.properties?.phone || ''}
                         /> <br></br>
-                    {/* <input type='submit'/> */}
                 </fieldset>
             </form>
         );
