@@ -1,0 +1,50 @@
+.preview {
+    margin-top: 20px;
+    border: 1px solid black;
+    aspect-ratio: 210 / 297;
+    width: 400px;
+    padding: 1em;
+    font-size: 13px;
+}
+
+.name-header {
+    margin-top: 10px;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+.p-education-section, .p-experience-section {
+    position: relative;
+    margin-top: 1em;
+    border: none;
+    border-top: 1px solid black;
+}
+
+.school-container, .company-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-education-container, .p-experience-container {
+    position: relative;
+    margin-left: 1em;
+}
+
+.p-experience-container > li {
+    margin-left: 1em;
+}
+
+.formatted-date > div{
+    position: relative;
+    display: flex;
+    gap: 0.5em;
+}
