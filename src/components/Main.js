@@ -145,11 +145,14 @@ class Main extends React.Component {
 
     componentDidMount() {
         const data = JSON.parse(localStorage.getItem('data'))
-        for (const [key, value] of Object.entries(data)) {
-            this.setState({
-                [key]: value
-            })
+        if (typeof data !== 'undefined'){
+            for (const [key, value] of Object.entries(data)) {
+                this.setState({
+                    [key]: value
+                })
+            }
         }
+        
     }
 
     loadEdSection() {

@@ -13,7 +13,7 @@ class About extends React.Component {
                         id='name'
                         name='name'
                         onChange={changeValue}
-                        value={this.props.properties.name || ''}
+                        value={this.props.properties?.name || ''}
                         /> <br></br>
 
                     <label htmlFor='email'>Email</label>
@@ -22,7 +22,7 @@ class About extends React.Component {
                         id='email'
                         name='email'
                         onChange={changeValue}
-                        value={this.props.properties.email || ''}
+                        value={this.props.properties?.email || ''}
                         /> <br></br>
 
                     <label htmlFor='phone'>Phone Number</label>
@@ -31,7 +31,7 @@ class About extends React.Component {
                         id='phone'
                         name='phone'
                         onChange={changeValue}
-                        value={this.props.properties.phone || ''}
+                        value={this.props.properties?.phone || ''}
                         /> <br></br>
                     {/* <input type='submit'/> */}
                 </fieldset>
