@@ -76,23 +76,7 @@ class Main extends React.Component {
                     })
                 })
             }
-            
         }
-        
-        
-        /* if (section === 'experience') {
-            console.log('deleteExp')
-            const filteredEd = Object.entries((this.state.experienceSection)).filter(
-                (item) => item[0] !== `${id}`
-            )
-            const toObj = Object.fromEntries(filteredEd)
-            //console.log(toObj)
-
-            this.setState({
-                experienceSection: toObj
-            })
-            console.log(this.state)
-        } */
     }
     
     handleChange(section, index=null){
@@ -144,15 +128,14 @@ class Main extends React.Component {
 
     componentDidMount() {
         const data = JSON.parse(localStorage.getItem('data'))
-        if (typeof data !== 'undefined'){return}
+        console.log(data)
+        if (data === null){return}
 
         for (const [key, value] of Object.entries(data)) {
             this.setState({
                 [key]: value
             })
         }
-        
-        
     }
 
     loadEdSection() {
