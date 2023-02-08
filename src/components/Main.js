@@ -149,10 +149,10 @@ class Main extends React.Component {
 
     loadExSection() {
         return (
-            <div className={`experience-section ${this.state.active === 'Experience' ? 'active' : ''}`}>
-                {this.state.exItems.map((key, i) => <Experience id={key} key={key} properties={this.state.experienceSection} handleChange={this.handleChange} handleDelete={this.handleDeleteSection}/>)}
-                <button className='add-section' onClick={() => this.handleAddSection('experience')}>Add Section</button>
-            </div>
+        <div className={`experience-section ${this.state.active === 'Experience' ? 'active' : ''}`}>
+            {this.state.exItems.map((key, i) => <Experience id={key} key={key} properties={this.state.experienceSection} handleChange={this.handleChange} handleDelete={this.handleDeleteSection}/>)}
+            <button className='add-section' onClick={() => this.handleAddSection('experience')}>Add Section</button>
+        </div>
         )
     }
 

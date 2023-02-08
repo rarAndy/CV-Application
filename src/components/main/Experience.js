@@ -1,4 +1,5 @@
 import React from 'react';
+import deleteButton from '../../assets/remove-icon.svg';
 
 class Experience extends React.Component {
     render() {
@@ -9,7 +10,8 @@ class Experience extends React.Component {
             <form>
                 <fieldset>
                     <h1>Experience</h1>
-                    <div id={id} className='delete-button' onClick={deleteItem}>x</div>
+                    <img id={id} className='delete-button' src={deleteButton} onClick={deleteItem} alt='delete'></img>
+                    {/* <div id={id} className='delete-button' onClick={deleteItem}>x</div> */}
                     <label htmlFor='company'>Company Name</label>
                     <input 
                         type='text'
