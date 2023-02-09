@@ -1,6 +1,43 @@
 import React from 'react';
 
-class About extends React.Component {
+function About(props) {
+    const changeValue = props.handleChange('about')
+    return (
+        <form>
+            <fieldset>
+                <h1>About</h1>
+                <label htmlFor='name'>Name</label>
+                <input 
+                    type='text'
+                    id='name'
+                    name='name'
+                    onChange={changeValue}
+                    value={props.properties?.name || ''}
+                    /> <br></br>
+
+                <label htmlFor='email'>Email</label>
+                <input 
+                    type='email'
+                    id='email'
+                    name='email'
+                    onChange={changeValue}
+                    value={props.properties?.email || ''}
+                    /> <br></br>
+
+                <label htmlFor='phone'>Phone Number</label>
+                <input 
+                    pattern='^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$'
+                    id='phone'
+                    name='phone'
+                    onChange={changeValue}
+                    value={props.properties?.phone || ''}
+                    /> <br></br>
+            </fieldset>
+        </form>
+    );
+}
+
+/* class About extends React.Component {
     render() {
         const changeValue = this.props.handleChange('about');
         return (
@@ -37,6 +74,6 @@ class About extends React.Component {
             </form>
         );
     }
-}
+} */
 
 export default About;

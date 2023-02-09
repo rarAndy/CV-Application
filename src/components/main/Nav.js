@@ -1,6 +1,16 @@
 import React from "react";
 
-class Nav extends React.Component {
+function Nav(props){
+    return (
+        <nav>
+            <div onClick={props.handleNavClick}>About</div>
+            <div onClick={props.handleNavClick}>Education</div>
+            <div onClick={props.handleNavClick}>Experience</div>
+        </nav>
+    )
+}
+
+/* class Nav extends React.Component {
     render() {
         return (
             <nav>
@@ -10,6 +20,6 @@ class Nav extends React.Component {
             </nav>
         )
     }
-}
+} */
 
 export default Nav;
