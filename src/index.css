@@ -1,15 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Mulish';
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-family: 'PT Serif';
+    height: 6vh;
 }
 
-.main-container {
-    border: 2px solid grey;
+footer {
+    background-color: rgb(159, 170, 218);
+    height: 5vh;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav{
@@ -49,68 +70,129 @@ nav > div:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    flex: 1 0 auto;
 }
 
 .information-container {
     position: relative;
-    overflow-y: auto;
-    overflow-x: hidden;
     margin-top: 0.5em;
-    min-width: 200px;    
-    height: 70vh;
+    
 }
 
-.information-container > div.active{
-    display: block;
+.about-section.active, .education-section.active, .experience-section.active {
+    display: flex;
+    flex-flow: row wrap;
     position: relative;
+    justify-content: center;
+    width: 66vw;
+}
+
+.button-container {
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25em;
     border: 0;
     border-bottom: 2px solid rgb(65, 62, 62);
+    padding-bottom: 1em;
+}
+
+.form-groups {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
 fieldset > h1{
     text-align: center;
 }
 
-input, textarea {
-    width: 20em;
+input{
+    width: 18em;
+    font-family: 'Mulish';
+}
+
+.gpa {
+    width: 6em;
+}
+
+.small-input {
+    width: 10em;
+}
+
+textarea {
+    width: 35em;
+    height: 4em;
+    font-family: 'Mulish';
 }
 
 .preview-container {
     width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 2em;
 }
 
-form {
-    margin-top: 2em;
-    margin-right: 1em;
+.form-container {
+    width: 560px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 560px;
+    max-height: 75vh;
+    scrollbar-gutter: stable both-edges;
 }
 
-.add-section {
+form{
+    margin-top: 2em;
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(82, 83, 88);
+    border-radius: 10%;
+    margin-top: 50px;
+    padding: 50px 20px 20px 20px;
+
+}
+
+.add-section, .add-item {
     padding: 5px;
     width: 100px;
-    margin-top: 2em;
-    margin-left: 38%;
-    margin-bottom: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .delete-button {
     position: relative;
-    left: 350px;
-    bottom: 25px;
     height: 30px;
     width: 30px;
     font-weight: bold;
     cursor: pointer;
-    
+}
+
+.delete-button:hover{
+    scale: 105%;
+}
+
+.github-logo {
+    height: 30px;
 }

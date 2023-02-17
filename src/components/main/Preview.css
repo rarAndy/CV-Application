@@ -1,10 +1,14 @@
-.preview {
+.preview-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     border: 1px solid black;
     aspect-ratio: 210 / 297;
     width: 400px;
+    font-size: 11px;
+}
+
+.preview {
     padding: 1em;
-    font-size: 13px;
 }
 
 .name-header {
@@ -14,11 +18,23 @@
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h3 {
-    font-size: 17px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.about-info {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.about-info > p {
+    padding-right: 5px;
+    margin-right: 5px;
+    border-right: 1px solid black;
 }
 
 .p-education-section, .p-experience-section {
@@ -47,4 +63,9 @@ h3 {
     position: relative;
     display: flex;
     gap: 0.5em;
+}
+
+.pdf-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

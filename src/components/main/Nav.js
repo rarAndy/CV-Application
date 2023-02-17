@@ -1,15 +1,13 @@
 import React from "react";
 
-class Nav extends React.Component {
-    render() {
-        return (
-            <nav>
-                <div onClick={this.props.handleNavClick}>About</div>
-                <div onClick={this.props.handleNavClick}>Education</div>
-                <div onClick={this.props.handleNavClick}>Experience</div>
-            </nav>
-        )
-    }
+function Nav(props){
+    return (
+        <nav>
+            <div className='nav-tab' onClick={props.handleNavClick}>About</div>
+            <div className='nav-tab' onClick={props.handleNavClick}>Education</div>
+            <div className='nav-tab' onClick={props.handleNavClick}>Experience</div>
+        </nav>
+    )
 }
 
 export default Nav;

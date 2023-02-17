@@ -1,14 +1,14 @@
 import React from 'react';
+import githubLogo from '../assets/github-mark.png'
 
-class Footer extends React.Component {
-    render() {
-        return (
-            <footer>
-                <p>Github</p>
-            </footer>
-            
-        );
-    }
+function Footer() {
+    return (
+        <footer>
+            <a href='https:/github.com/rarAndy'>
+                <img className='github-logo' src={githubLogo} alt='Github Logo'></img>
+            </a>  
+        </footer>
+    );
 }
 
 export default Footer;
