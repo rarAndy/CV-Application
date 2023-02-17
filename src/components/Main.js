@@ -16,8 +16,8 @@ function Main() {
 
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem('data'))
-        const {aboutSection, educationSection, experienceSection, active, edItems, exItems} = data
-        if (data){
+        if (data) {
+            const {aboutSection, educationSection, experienceSection, active, edItems, exItems} = data
             setAboutSection(aboutSection);
             setEducationSection(educationSection);
             setExperienceSection(experienceSection);
