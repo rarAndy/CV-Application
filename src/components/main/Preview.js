@@ -56,12 +56,10 @@ function Preview(props) {
     )
 
     const handleGeneratePDF = async () => {
-        /* previewRef.current.style.border = 'none' */
         const element = previewRef.current;
         const canvas = await html2canvas(element, {
             scale: 4
         })
-        /* previewRef.current.style.border = '1px solid black' */
         const data = canvas.toDataURL('image/png')
         const doc = new jsPDF({
             orientation: 'portrait'
