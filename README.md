@@ -1,1 +1,1 @@
-Web CV Application created with React. Try the demo [here](https://rarandy.github.io/CV-Application/)!
+Web Curriculum Vitae Application created with React. The app dynamically creates a resume upon your input, and you can create and delete your own fields. The data is saved locally and you can generate a PDF at any time.  Try the demo [here](https://rarandy.github.io/CV-Application/)!
